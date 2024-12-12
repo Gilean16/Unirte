@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;  
+    background-color: rgb(220, 219, 219);
+}
+
+
+nav img{
+    width: 10vw;
+    margin-left: 20px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 10;
+    width: 100vw;
+    margin-left: -20px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30vw;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+}
+
+
+
+
+/*Rewards Styles*/
+.rewards-container {
+    height: 100vh;          /* Usa toda la altura disponible */
+    overflow: hidden;       /* Evita el desbordamiento del contenedor principal */
+}
+
+
+
+
+/* Mitad izquierda */
+.left-container{
+    position: fixed;
+    top: 1;
+
+    width: 35vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);
+    color: white;
+    margin: 0;
+    margin-left: -10px;
+    padding: 50px;
+}
+
+.left-container p{
+    margin: 40px;
+    margin-top: 15vw;
+    display: flex;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Mitad derecha */
+.right-container {
+    margin-left: 35vw;      /* Alinea con el contenedor izquierdo */
+    width: 65vw;            /* Ajusta el ancho para evitar el desbordamiento */
+    max-height: 100vh;      /* Limita la altura total a la altura de la pantalla */
+    overflow-y: auto;       /* Scroll solo si el contenido excede la altura */
+}
+
+/* Botones de unirse*/
+
+.unete-container {
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc; /* Agrega un borde para destacar */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+}
+
+/* Contenedor principal del formulario */
+.unete-container {
+    margin-top: 500px;
+    max-width: 400px; /* Limitar el ancho del formulario */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    margin-left: 15vw;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo general para los campos de formulario */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Alinear los elementos (label + input) en columna */
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px; /* Separación entre el label y el input */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #00704a; /* Cambiar el borde al hacer foco */
+    outline: none;
+}
+
+/* Botones en columna */
+.form-buttons {
+    display: flex;
+    flex-direction: column; /* Alinear los botones en columna */
+    gap: 10px; /* Espaciado entre los botones */
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.bt-filled {
+    background-color: #00704a;
+    color: #fff;
+}
+
+.bt-filled:hover {
+    background-color: #004d2c;
+}
+
+.bt-outline {
+    background-color: transparent;
+    border: 2px solid #00704a;
+    color: #00704a;
+}
+
+.bt-outline:hover {
+    background-color: #00704a;
+    color: #fff;
+}
+
+/* Contenedor del captcha */
+.captcha-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#captcha-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: #00704a;
+}
+
+#refresh-captcha {
+    background-color: transparent;
+    border: none;
+    color: #00704a;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#refresh-captcha:hover {
+    color: #004d2c;
+}
+
+#captcha-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 380px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/*Debajo de la caja de formulario*/
+
+.invitacion {
+    /* Fondo negro con degradado en las orillas */
+    background: black;
+    background: linear-gradient(to right, white, black 10%, black 90%, white);
+    text-align: center; /* Centrar el contenido */
+    width: 47.8vw;
+    padding: 20px; /* Espaciado interno */
+    margin-left: 10vw;
+}
+
+.invitacion p {
+    font-size: 18px; /* Tamaño de la fuente */
+    color: white; /* Color del texto */
+    margin: 0; /* Eliminar márgenes del párrafo */
+}
+
+/* Debajo de la parte negra*/
+
+.grey-area  {
+    display: flex;             /* Utiliza flexbox */
+    flex-direction: column;    /* Alinea los elementos en columna */
+    justify-content: center;   /* Centra verticalmente */
+    align-items: center;       /* Centra horizontalmente */
+    color: rgb(0, 0, 0);
+    margin: auto;              /* Centra horizontalmente si hay un contenedor padre */
+    margin-left: 9vw;
+    padding: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    box-sizing: border-box;    /* Asegura que el padding no aumente el tamaño total */
+}
+
+/* Contenedor principal para las secciones */
+.info-container {
+    display: flex;
+    justify-content: left; 
+    align-items: flex-start; 
+    padding: 0; 
+    margin: 0;
+    margin-left: 10vw;
+    margin-bottom: 20px;
+    gap: 0; 
+}
+
+.info-column {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    font-size: 10px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 10px; 
+    text-align: left; 
+}
+
+
+.info-column li {
+    text-align: left; 
+}
+
+.info-column li p {
+    font-weight: bold; 
+    margin: 0;
+    color: #333;
+}
+
+.info-column a {
+    text-decoration: none; 
+    color: #00704a; 
+    transition: color 0.3s; 
+}
+
+.info-column a:hover {
+    color: #004d2c; 
+    text-decoration: underline; 
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #f4f4f4; /* Color de fondo */
+    padding: 20px;
+    text-align: center;
+    margin-left: 9vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seriff;
+    font-size: 14px;
+    color: #333;
+   
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px; /* Ajusta el tamaño de los íconos */
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); 
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #00704a; 
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #004d2c; 
+}
+
+.footer p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 20px; 
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #00704a; /* Creo que es un color verde similar al de Starbucks */
+}
+
+.btn-filled {
+    background-color: #ffffff;
+    border: none;
+    color: #00704a;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-filled:hover {
+    background-color: #004d2c; 
+    color: #ffffff;
+}
+
+.social-icons img {
+    width: 30px; /* Ajusta el tamaño de los íconos */
+    height: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Agrega transición para filtro */
+    filter: grayscale(0); /* Inicialmente en escala de grises */
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño */
+    filter: grayscale(100%); /* Remueve el efecto de escala de grises */
+}
+
+.select-button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 2vw;
+}
+
+.select-button input:checked{
+    accent-color: #028d45;
+}
+
+
+.select-button input {
+  
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 2px solid #028d45;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+  }
+
+  .terms {
+    margin: 0 auto;
+    margin-bottom: 3vw;
+    padding: 0.1vw;
+  }
+
+  .terms a{
+    margin-left: -0.1vw;
+    color: #028d45;
+  }
+
+  .terms input:checked{
+    accent-color: #028d45;
+}
+  
+  .left-container1{
+    position: fixed;
+    top: 1;
+
+    width: 35vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);
+    color: white;
+    margin: 0;
+    margin-left: -10px;
+    padding: 50px;
+}
+
+.left-container1 p{
+    margin: 6vw;
+    margin-top: 18vw;
+    display: flex;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.edad {
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+}
+.edad input {
+    font-family: Roboto;
+    color:#028d45
+
+}

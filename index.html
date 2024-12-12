@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inicia Sesion|Starbucks</title>
+</head>
+<body>
+    <header>
+        <navbar class="navbar">
+            <nav class="navbar-left">
+                <img src="https://1000marcas.net/wp-content/uploads/2019/12/Starbucks-logo.jpg" alt="">
+                <ul>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Rewards</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar-right">
+                <ul>
+                    <li><a href="">Localizar Tienda</a></li>
+                    <li><a href="">Ingresar</a></li>
+                    <li><a href="">Unete</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+
+
+    <!--Contenido Principal-->
+    <section class="rewards-container">
+        <!--Mitad Izquierda-->
+        <section class="left-container">
+            <b><p>Ingresa a tu cuenta 🌟</p></b>
+        </section>
+
+        <!--Mitad Derecha-->
+        <section class="right-container">
+            <section class="unete-container">
+                <h2>Formulario de Registro</h2>
+                <form action="/my-handling-form-page" method="post" id="registration-form">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="user_email" placeholder="Ingresa tu email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="user_password" placeholder="Ingresa tu contraseña" required />
+                    </div>
+                    <div class="form-group captcha-group">
+                        <label for="captcha">Resuelve el Captcha:</label>
+                        <div class="captcha-container">
+                            <span id="captcha-text"></span>
+                            <button type="button" id="refresh-captcha">⟳</button>
+                        </div>
+                        <input type="text" id="captcha-input" placeholder="Escribe aquí el captcha" required />
+                        <p id="captcha-error" class="error-message"></p>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="bt-filled">Enviar</button>
+                        <button type="reset" class="bt-outline">Limpiar</button>
+                    </div>
+                </form>
+            </section>
+            <hr>
+            <section class="invitacion">
+                
+                <p>¡SER PARTE DE STARBUCKS REWARDS™ ES MUY FÁCIL</p>
+            
+            </section>   
+            <hr>  
+            <section class="grey-area">
+                <p>Unete ahora!</p>
+                <b><p>Descarga la aplicación, registrate, obtén estrellas, disfruta de café gratis y algo más.</p></b>
+                <img src="imagenes/mujer.png" width="100px">
+            </section> 
+            <hr>
+            <div class="info-container">
+                <ul class="info-column">
+                    <li><p>Sobre Nosotros</p></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Historias Starbucks</a></li>
+                </ul>
+                <ul class="info-column">
+                    <li><p>Atención al cliente</p></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Facturas Electrónicas</a></li>
+                    <li><a href="#">Formas de comprar</a></li>
+                </ul>
+            </div>
+            <hr>
+            
+            
+            <footer class="footer">
+                <div class="social-icons">
+                    <a href="#"><img src="https://img.icons8.com/m_rounded/512/facebook-new.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://www.pngarts.com/files/9/Instagram-Logo-PNG-Pic.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://freepnglogo.com/images/all_img/1707222563twitter-logo-png.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/152/152810.png" alt="YouTube"></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Accesibilidad web</a> |
+                    <a href="#">Aviso de privacidad</a> |
+                    <a href="#">Boletines</a> |
+                    <a href="#">Condiciones de uso</a> |
+                    <a href="#">Mapa de sitio</a> |
+                    <a href="#">Preferencia sobre cookies</a>
+                </div>
+                <p>© 2024 Starbucks Coffee Company. Reservados todos los derechos</p>
+            </footer>                
+        </section>
+    </section>
+  
+</body>
+<script src="captcha.js"></script>
+</html>
